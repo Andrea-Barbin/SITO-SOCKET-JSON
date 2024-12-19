@@ -1,0 +1,113 @@
+
+/* Stile dei riquadri */
+.osi-box {
+    position: relative;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Nascosto all'inizio */
+    transform: translateY(-100px); /* Partono dall'alto */
+    animation: drop 0.5s ease-out forwards;
+    display: flex; /* Per centrare il contenuto */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Allineamento testo */
+}
+
+/* Effetto al passaggio del mouse */
+.osi-box:hover {
+    background-color: #f0f8ff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* La descrizione appare al passaggio del mouse */
+.osi-box .level-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    display: flex; /* Per centrare anche qui */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.osi-box:hover .level-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animazione per simulare la caduta */
+@keyframes drop {
+    from {
+        opacity: 0;
+        transform: translateY(-100px); /* Inizia fuori dalla vista */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Si ferma alla posizione finale */
+    }
+}
+
+/* Ritardi progressivi per ogni livello */
+.osi-box:nth-child(1) {
+    animation-delay: 1.5s;
+}
+
+.osi-box:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.osi-box:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.osi-box:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.osi-box:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.osi-box:nth-child(6) {
+    animation-delay: 0.2s;
+}
+
+.osi-box:nth-child(7) {
+    animation-delay: 0s;
+}
+
+.navbar {
+    background-color: black;
+    top: 0;
+}
+
+/*STILI PER I LINK ALLE SEZIONI DI SPIEGAZIONE PER OGNI LIVELLO*/
+.osi-link {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: inherit; /* Mantiene il colore del testo */
+    display: block; /* Rende l'intero contenitore cliccabile */
+}
+
+.osi-link:hover .osi-box {
+    transform: scale(1.02); /* Effetto hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aggiunge un'ombra */
+}
+
+.level-description:hover {
+    transform: scale(1.1);  /* Ingrandisce l'immagine al 110% */
+    color:#39d3db;  /* Cambia il colore del testo */
+    transition: transform 0.3s ease-in-out;
+}

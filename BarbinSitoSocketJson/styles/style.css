@@ -1,0 +1,270 @@
+body {
+    background: linear-gradient(to bottom, #f8f9fa, #c0c1c2);
+    color: #333;
+    text-align: justify;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#parSocket, #parIsoOsi, #parClientServer{
+    display: none;
+}
+
+/* Definizione del contenitore per l'onda */
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #f8f9fa;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+  
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Larghezza dei pulsanti */
+    height: 50px; /* Altezza dei pulsanti */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    border-radius: 50%;
+}
+
+#btnCaroselloSx #btnCaroselloDx{
+    display: none;
+}
+
+.wave-separator {
+    position: relative;
+    background-color: white; /* Per uniformare il passaggio */
+    overflow: hidden; /* Taglia eventuali elementi fuori posto */
+}
+
+.wave-separator svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto; /* Mantieni proporzioni */
+}
+/* Navbar bianca con ombra leggera */
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    backdrop-filter: blur(50px); /* Effetto blur */
+    position: fixed; /* Posizione fissa */
+    top: 0; /* Aggiungi questa proprietà per fissarla alla parte superiore della pagina */
+    left: 0;
+    width: 100%;
+    padding: 1rem 0; /* Rimuovi il padding laterale 10% e lascia solo quello verticale */
+    background: rgba(0, 0, 0, 0.1); /* Trasparente con leggero nero */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* Collegamenti di base */
+/* Collegamenti di base */
+.navbar-nav .nav-link {
+    color: #000; /* Colore base del testo */
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Spaziatura interna per migliorare il design */
+    border-radius: 0.5rem; /* Angoli smussati per il riquadro */
+    transition: all 0.3s ease-in-out; /* Transizione fluida */
+}
+
+/* Hover e focus con sottolineatura animata */
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    text-decoration: none; /* Rimuove la sottolineatura predefinita */
+}
+
+/* Stato attivo (link selezionato) */
+.navbar-nav .nav-link.active {
+    background-color: #3260a8; /* Stesso effetto del hover (facoltativo) */
+    color: white;
+}
+
+.navbar .nav-link {
+    color: #fff !important; /* Imposta il colore del testo in bianco */
+    font-weight: bold; /* Imposta il testo in grassetto */
+    font-size: 1.1rem; /* Aumenta leggermente la dimensione del font */
+}
+
+.navbar-text {
+    color: #fff !important; /* Imposta il colore del testo sulla destra in bianco */
+    font-weight: bold; /* Imposta il testo in grassetto */
+    font-size: 3rem; /* Puoi aumentare leggermente la dimensione del font se desiderato */
+}
+
+/* Aggiunge una sottolineatura animata ai link */
+.navbar-nav .nav-link {
+    position: relative; /* Posiziona in modo relativo per abilitare la pseudoclasse ::after */
+    text-decoration: none; /* Rimuove la sottolineatura predefinita */
+    padding-bottom: 4px; /* Spazio sotto il testo per la sottolineatura */
+}
+
+.navbar-nav .nav-link::after {
+    content: ''; /* Crea un pseudo-elemento vuoto */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Inizia al centro */
+    width: 0; /* La larghezza iniziale è 0 */
+    height: 5px; /* Altezza della sottolineatura */
+    background-color: #3ed2e6; /* Colore azzurro della sottolineatura */
+    transition: width 0.3s ease, left 0.3s ease; /* Animazione per larghezza e posizione */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Estende la larghezza al 100% al passaggio del mouse */
+    left: 0; /* Allinea la sottolineatura a sinistra */
+}
+
+/* 1. Icona a panino senza bordo e linee bianche */
+.navbar-toggler-icon {
+    border: none; /* Rimuove il bordo */
+    background-color: transparent;
+    color: white /* Sfondo trasparente */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    background-color: white; /* Colore delle linee bianche */
+}
+
+/* 2. Posizionare il titolo "LE SOCKET" sopra i link nel menu per schermi piccoli */
+@media (max-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Dispone i link in colonna */
+        align-items: flex-start; /* Allinea a sinistra i link */
+    }
+    .navbar-text {
+        margin-bottom: 15px; /* Distanza tra il titolo e i link */
+        font-size: 1.5rem; /* Dimensione font del titolo */
+        font-weight: bold; /* Grassetto per il titolo */
+    }
+}
+
+/* 3. Sottolineatura solo sulla parola del link */
+.navbar-nav .nav-link {
+    position: relative; /* Posiziona in modo relativo per abilitare la pseudoclasse ::after */
+    text-decoration: none; /* Rimuove la sottolineatura predefinita */
+}
+
+.navbar-nav .nav-link::after {
+    content: ''; /* Crea un pseudo-elemento vuoto */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #3ed2e6; /* Colore della sottolineatura */
+    transition: width 0.3s ease; /* Transizione per la larghezza */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Estende la larghezza della sottolineatura */
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 40px 0; /* Aumenta l'altezza del footer */
+    margin-top: 40px; /* Distanza tra il footer e la slideshow */
+}
+
+#parSocket, #parIsoOsi, #parClientServer {
+    max-width: 80%; /* Limita la larghezza massima per evitare che escano dall'immagine */
+    left: 50%; /* Centra il div orizzontalmente */
+    transform: translateX(-50%); /* Compensa il margine sinistro */
+   /* Imposta il margine superiore per un posizionamento ottimale */
+}
+
+/* Hover per le immagini */
+.img-fluid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aggiunta di transizioni per effetto zoom e ombra */
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);  /* Ingrandisce l'immagine al 110% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Aggiunta di un'ombra per un effetto più evidente */
+}
+
+h1, h2, h3, li{
+    transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.05);  /* Ingrandisce l'immagine al 110% */
+    color: #3977db;  /* Cambia il colore del testo */
+}
+
+h2:hover {
+    transform: scale(1.05);  /* Ingrandisce l'immagine al 110% */
+    color: #3977db;  /* Cambia il colore del testo */
+}
+
+h3:hover {
+    transform: scale(1.05);  /* Ingrandisce l'immagine al 110% */
+    color: #3977db;  /* Cambia il colore del testo */
+}
+
+p:hover{
+    color: #3977db;  
+}
+
+li:hover {
+    transform: scale(1.1);  /* Ingrandisce l'immagine al 110% */
+    color:#007bff;  /* Cambia il colore del testo */
+}
+
+a > p :hover {
+    transform: scale(1.3);  /* Ingrandisce l'immagine al 110% */
+    color: #007bff;  /* Cambia il colore del testo */
+}
+.footer a {
+    color: #28d2d8; /* Modificato il colore dei link */
+    text-decoration: none;
+}
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.container { 
+    padding-top: 10%;
+}
+
+a:hover {
+    transform: scale(1.1);  /* Ingrandisce l'immagine al 110% */
+    color:#007bff;  /* Cambia il colore del testo */
+    transition: transform 0.3s ease-in-out;
+}
+
+.zommaDiv:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sfondoBlu:hover {
+    transform: scale(1.1);  /* Ingrandisce l'immagine al 110% */
+    color:#39d3db;  /* Cambia il colore del testo */
+    transition: transform 0.3s ease-in-out;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

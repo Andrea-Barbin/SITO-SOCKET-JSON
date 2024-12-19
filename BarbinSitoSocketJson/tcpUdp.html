@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP e UDP JSON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleTcpUdp.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <span class="navbar-text text-white fw-bold">LE SOCKET</span>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home e Glossario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="socket.html">Socket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="osi.html">Modello OSI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tcpUdp.html">TCP vs UDP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Colonna dell'immagine (a sinistra) -->
+            <div class="col-lg-6 order-lg-1">
+                <img src="https://www.datocms-assets.com/41207/1627941441-header.jpg?q=60" class="img-fluid" alt="TCP vs UDP">
+            </div>
+            <!-- Colonna del testo (a destra) -->
+            <div class="col-lg-6 order-lg-2">
+                <h1 id="inizioPagina" class="text-center">TCP vs UDP: Analisi Approfondita</h1>
+                <p>Scopri le differenze tecniche, i vantaggi e le limitazioni dei protocolli TCP e UDP, con un focus su come vengono utilizzati nelle applicazioni moderne.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduzione -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Div con testo -->
+            <div class="col-md-6">
+                <h2 class="text-justify mb-4">Introduzione ai Protocolli di Trasporto</h2>
+                <p class="lead text-justify">TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono i principali protocolli di trasporto utilizzati nelle reti moderne. Sono responsabili del trasferimento dei dati tra dispositivi su una rete e sono fondamentali per il funzionamento di Internet. Ogni protocollo ha caratteristiche distinte che li rendono adatti a scenari specifici.</p>
+            </div>
+
+            <!-- Div con iframe del video -->
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/P6WGbV7vxpA" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Confronto Dettagliato tra TCP e UDP</h2>
+        <div class="row g-4" id="confrontoDiv"></div>
+    </div>
+
+    <!-- Sezione Tecnica Avanzata -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Dettagli Tecnici Avanzati: TCP vs UDP</h2>
+        <div class="accordion" id="tcpUdpAccordion"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div>
+            <p>&copy; 2024 <span id="crediti">Sito Realizzato da Barbin Andrea. Tutti i diritti riservati.</span> 
+            <br><a href="#inizioPagina">Torna su</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scriptTcpUdp.js"></script>
+</body>
+</html>

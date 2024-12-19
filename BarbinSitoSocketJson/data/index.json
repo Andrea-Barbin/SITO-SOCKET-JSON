@@ -1,0 +1,72 @@
+{
+    "sections": [
+        {
+            "type": "image_banner",
+            "id": "immSocket",
+            "image_src": "./immaginiHome/socket.png",
+            "title": "Cos'è una Socket?",
+            "text": "Una socket è un'interfaccia software che permette a due dispositivi in rete di scambiare dati..."
+        },
+        {
+            "type": "image_banner",
+            "id": "immIsoOsi",
+            "image_src": "./immaginiHome/modelloOsi.png",
+            "title": "Partendo dalle basi, conosci il modello OSI?",
+            "text": "Immagina il modello OSI come un viaggio che i dati fanno attraverso 7 livelli, ognuno con una funzione specifica..."
+        },
+        {
+            "type": "image_banner",
+            "id": "immClientServer",
+            "image_src": "./immaginiHome/clientServer.png",
+            "title": "Cos'è il modello Client-Server?",
+            "text": "Il modello client-server è un'architettura di rete in cui un client richiede servizi a un server, il quale risponde elaborando la richiesta."
+        }
+    ],
+    "header": {
+        "background_color": "bg-primary",
+        "title": "Benvenuti nel mondo delle socket",
+        "subtitle": "Un viaggio tra i concetti di base e le tecnologie avanzate per la comunicazione tra dispositivi in rete.",
+        "button": {
+            "text": "Scopri di più sulle Socket",
+            "link": "socket.html"
+        }
+    },
+    "glossary": {
+        "carousel_items": [
+            {
+                "title": "Modello OSI",
+                "text": "Il modello OSI è la base per comprendere la comunicazione nei sistemi di rete.",
+                "link": "osi.html"
+            },
+            {
+                "title": "TCP e UDP",
+                "text": "Due protocolli fondamentali per la comunicazione: uno affidabile e uno veloce.",
+                "link": "tcpUdp.html"
+            },
+            {
+                "title": "Protocollo",
+                "text": "Un protocollo è un insieme di regole che definiscono come comunicano due o più sistemi.",
+                "link": "https://it.wikipedia.org/wiki/Protocollo_informatico"
+            },
+            {
+                "title": "Rete",
+                "text": "La rete è un insieme di dispositivi interconnessi per lo scambio di dati.",
+                "link": "rete.html"
+            },
+            {
+                "title": "Indirizzo IP",
+                "text": "Un indirizzo IP è un identificatore unico assegnato a un dispositivo in rete.",
+                "link": "https://it.wikipedia.org/wiki/Indirizzo_IP"
+            },
+            {
+                "title": "Numero di Porta",
+                "text": "Specifica un'applicazione o servizio in una rete.",
+                "link": "https://it.wikipedia.org/wiki/Porta_(reti)"
+            }
+        ]
+    },
+    "footer": {
+        "text": "&copy; 2024 Sito Realizzato da Barbin Andrea. Tutti i diritti riservati.",
+        "back_to_top": "#immIsoOsi"
+    }
+}

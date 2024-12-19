@@ -1,0 +1,95 @@
+{
+    "titolo": "Confronto tra TCP e UDP",
+    "introduzione": "In questa sezione, esploreremo le principali differenze tra i protocolli di rete TCP e UDP.",
+    "introduzioneSec": {
+      "titolo": "Introduzione ai Protocolli di Trasporto",
+      "descrizione": "TCP e UDP sono i due principali protocolli di trasporto utilizzati per la comunicazione sulla rete.",
+      "videoUrl": "https://www.example.com/video"
+    },
+    "confronto": [
+      {
+        "nome": "TCP",
+        "titolo": "TCP: Affidabilità e Connessione",
+        "descrizione": "TCP è un protocollo orientato alla connessione, il che significa che stabilisce una connessione prima di inviare i dati.",
+        "caratteristiche": [
+          {
+            "titolo": "Affidabilità",
+            "descrizione": "Ogni pacchetto è garantito e l'ordine dei pacchetti è rispettato."
+          },
+          {
+            "titolo": "Controllo degli errori",
+            "descrizione": "I pacchetti vengono verificati per errori e ritrasmessi se necessario."
+          },
+          {
+            "titolo": "Controllo di flusso",
+            "descrizione": "Impedisce che i pacchetti vengano inviati troppo velocemente."
+          },
+          {
+            "titolo": "Connessione orientata",
+            "descrizione": "Viene stabilita una connessione tra il mittente e il destinatario prima di trasmettere i dati."
+          }
+        ]
+      },
+      {
+        "nome": "UDP",
+        "titolo": "UDP: Velocità e Semplicità",
+        "descrizione": "UDP, al contrario di TCP, è un protocollo non orientato alla connessione, che invia i pacchetti senza stabilire una connessione preventiva.",
+        "caratteristiche": [
+          {
+            "titolo": "Velocità",
+            "descrizione": "Nessuna connessione preventiva, quindi i dati possono essere inviati immediatamente."
+          },
+          {
+            "titolo": "Minore overhead",
+            "descrizione": "Non ci sono meccanismi per il controllo degli errori o la gestione del flusso."
+          },
+          {
+            "titolo": "Non affidabile",
+            "descrizione": "I pacchetti possono essere persi, duplicati o arrivare fuori ordine."
+          },
+          {
+            "titolo": "Connessione non orientata",
+            "descrizione": "Non viene stabilita alcuna connessione prima dell'invio dei dati."
+          }
+        ]
+      }
+    ],
+    "sezioneTecnica": [
+      {
+        "id": "tcp",
+        "titolo": "TCP: Dettagli Tecnici",
+        "descrizione": "TCP utilizza un meccanismo di handshake a tre vie per stabilire una connessione sicura tra il client e il server.",
+        "detagli": [
+          {
+            "titolo": "SYN",
+            "descrizione": "Il client invia un pacchetto SYN per avviare la connessione."
+          },
+          {
+            "titolo": "SYN-ACK",
+            "descrizione": "Il server risponde con un pacchetto SYN-ACK."
+          },
+          {
+            "titolo": "ACK",
+            "descrizione": "Il client invia un pacchetto ACK per confermare la connessione."
+          }
+        ]
+      },
+      {
+        "id": "udp",
+        "titolo": "UDP: Dettagli Tecnici",
+        "descrizione": "UDP non prevede alcun processo di connessione. I pacchetti vengono inviati in modo diretto senza alcuna garanzia.",
+        "detagli": [
+          {
+            "titolo": "Trasmissione Diretta",
+            "descrizione": "I pacchetti vengono inviati senza connessione preventiva."
+          },
+          {
+            "titolo": "Velocità",
+            "descrizione": "UDP è ideale per applicazioni che necessitano di velocità e tollerano perdite di pacchetti."
+          }
+        ]
+      }
+    ],
+    "crediti": "Sito Realizzato da YourName"
+  }
+  

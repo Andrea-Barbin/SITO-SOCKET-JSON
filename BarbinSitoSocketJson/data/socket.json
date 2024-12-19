@@ -1,0 +1,42 @@
+{
+    
+    "introduzioneAlta": {
+      "titolo": "Socket: La Tecnologia Fondamentale",
+      "paragrafoDesc": "Esplora come funzionano le socket e il loro ruolo nella comunicazione in rete moderna.",
+      "testoLink": "Scopri di più", 
+      "linkPulsante": "https://it.wikipedia.org/wiki/Socket_(reti)"
+    },
+
+    "definizioneSocket": {
+      "titoloDef": "Cos'è una Socket?",
+      "pDef": "Una <strong>socket</strong> è un'interfaccia software che consente a due programmi di comunicare tra loro, sia localmente che su una rete. Le socket sono fondamentali per molte applicazioni moderne, tra cui server web, client di posta elettronica, giochi online e molto altro. Quando due dispositivi devono comunicare su una rete, uno di essi agirà da <strong>server</strong> e l'altro da <strong>client</strong>, utilizzando una socket per inviare e ricevere dati.",
+      "linkImmDef": "https://teoriadeisegnali.it/appint/html/Images/gapil46x.jpg"
+    },
+
+    "titolo": "Socket: La Tecnologia Fondamentale",
+    "introduzione": "Le socket sono un elemento cruciale della comunicazione in rete, essenziali per applicazioni moderne.",
+    "tipologie": [
+      {
+        "nome": "Stream Socket (TCP)",
+        "descrizione": "Le stream socket utilizzano il protocollo TCP, ideale per applicazioni che richiedono un trasferimento dati affidabile e continuo.",
+        "usages": ["Trasferimento di file", "Navigazione web", "Servizi di posta elettronica"]
+      },
+      {
+        "nome": "Datagram Socket (UDP)",
+        "descrizione": "Le datagram socket utilizzano il protocollo UDP, ideale per applicazioni dove la velocità è più importante dell'affidabilità.",
+        "usages": ["Streaming video", "Applicazioni di gioco online", "Servizi DNS"]
+      }
+    ],
+    "processoComunicazione": [
+      {
+        "ruolo": "Server",
+        "descrizione": "Il server apre una socket in ascolto su una porta specifica, pronto a ricevere connessioni dai client."
+      },
+      {
+        "ruolo": "Client",
+        "descrizione": "Il client apre una socket per connettersi al server e inviare richieste o ricevere dati."
+      }
+    ],
+    "crediti": "Sito Realizzato da Barbin Andrea"
+  }
+  

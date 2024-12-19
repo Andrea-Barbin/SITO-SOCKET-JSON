@@ -1,0 +1,46 @@
+
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+}
+
+.accordion-button:hover {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.footer {
+    background: #212529;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: black;
+}

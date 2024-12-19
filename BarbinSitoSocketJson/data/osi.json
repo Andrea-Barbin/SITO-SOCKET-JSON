@@ -1,0 +1,93 @@
+{
+    "levels": [
+        {
+            "id": 1,
+            "name": "Fisico",
+            "description": "Gestisce i mezzi fisici di trasmissione come cavi, segnali elettrici e onde radio.",
+            "fullDescription": "Il Livello 1 (Fisico) si occupa della trasmissione dei bit attraverso i mezzi fisici. Comprende cavi, segnali elettrici, fibre ottiche, onde radio, e altre tecnologie fisiche per il trasferimento dei dati. Questo livello è responsabile della codifica dei dati in segnali fisici.",
+            "image": "https://www.ionos.it/digitalguide/fileadmin/_processed_/9/6/csm_osi-datenstrom-t_1bc6069c55.jpg",
+            "features": [
+                "Cavi Ethernet, fibra ottica, cavi telefonici.",
+                "Dispositivi come hub, switch e modem.",
+                "Onde radio per comunicazioni wireless (Wi-Fi, Bluetooth)."
+            ],
+            "pdu": "Bit"
+        },
+        {
+            "id": 2,
+            "name": "Collegamento Dati",
+            "description": "Gestisce il controllo degli errori e il flusso dei dati tra due dispositivi.",
+            "fullDescription": "Il Livello 2 (Collegamento Dati) è responsabile della trasmissione di frame tra dispositivi. Gestisce la rilevazione e correzione degli errori, il controllo del flusso e la sincronizzazione della comunicazione tra i dispositivi.",
+            "image": "https://www.webconnect.it/wp-content/uploads/2016/09/network-switch-ethernet-1068x601.jpg",
+            "features": [
+                "Ethernet per le reti cablate.",
+                "Wi-Fi per la trasmissione wireless.",
+                "PPP (Point-to-Point Protocol) per connessioni punto-punto."
+            ],
+            "pdu": "Frame"
+        },
+        {
+            "id": 3,
+            "name": "Rete",
+            "description": "Gestisce l'indirizzamento logico e il routing dei pacchetti tra dispositivi nella rete.",
+            "fullDescription": "Il Livello 3 (Rete) si occupa dell'indirizzamento, del routing e del controllo del traffico dati tra dispositivi appartenenti a reti diverse. Il protocollo principale in questo livello è l'IP (Internet Protocol).",
+            "image": "https://wallpapers.com/images/hd/wifi-1920-x-1080-wallpaper-lvl0ocmzr0cicdls.jpg",
+            "features": [
+                "Indirizzamento IP (IPv4, IPv6).",
+                "Router per instradamento dei pacchetti.",
+                "Protocollo ICMP per il controllo degli errori di rete."
+            ],
+            "pdu": "Pacchetto"
+        },
+        {
+            "id": 4,
+            "name": "Trasporto",
+            "description": "Assicura la trasmissione dei dati in modo affidabile tra host su reti diverse.",
+            "fullDescription": "Il Livello 4 (Trasporto) gestisce la trasmissione dei dati end-to-end tra i dispositivi. I principali protocolli in questo livello sono TCP (Transmission Control Protocol) e UDP (User Datagram Protocol).",
+            "image": "https://www.flessya.com/site/wp-content/uploads/2024/04/rei-12-13-1024x512-1.jpg",
+            "features": [
+                "Controllo di flusso.",
+                "Affidabilità della trasmissione.",
+                "Protocollo TCP per connessioni affidabili, UDP per trasmissioni veloci."
+            ],
+            "pdu": "Segmento"
+        },
+        {
+            "id": 5,
+            "name": "Sessione",
+            "description": "Gestisce la comunicazione e il controllo delle sessioni tra applicazioni.",
+            "fullDescription": "Il Livello 5 (Sessione) è responsabile della gestione delle sessioni di comunicazione tra le applicazioni. Permette l'inizializzazione, il mantenimento e la chiusura delle sessioni di comunicazione.",
+            "image": "https://www.dgroove.it/wp-content/uploads/2019/10/Network-Defender.jpg",
+            "features": [
+                "Gestione delle sessioni di comunicazione.",
+                "Controllo di dialogo tra le applicazioni."
+            ],
+            "pdu": "Dati di sessione"
+        },
+        {
+            "id": 6,
+            "name": "Presentazione",
+            "description": "Gestisce la rappresentazione dei dati, la codifica e la decodifica.",
+            "fullDescription": "Il Livello 6 (Presentazione) è responsabile della traduzione e della formattazione dei dati. Si occupa anche della crittografia e della compressione dei dati.",
+            "image": "https://imgcdn.agendadigitale.eu/wp-content/uploads/2024/11/22151516/protocollo-tls-1.jpg",
+            "features": [
+                "Conversione di formato (es. da EBCDIC a ASCII).",
+                "Compressione dei dati.",
+                "Crittografia dei dati."
+            ],
+            "pdu": "Dati di presentazione"
+        },
+        {
+            "id": 7,
+            "name": "Applicazione",
+            "description": "Fornisce i servizi di rete agli utenti finali.",
+            "fullDescription": "Il Livello 7 (Applicazione) è il livello più alto del modello OSI e offre i servizi di rete agli utenti. I protocolli in questo livello includono HTTP, FTP, SMTP e molti altri.",
+            "image": "https://imgcdn.agendadigitale.eu/wp-content/uploads/2019/09/23145033/shutterstock_716547643.jpg",
+            "features": [
+                "Servizi come il web (HTTP), la posta elettronica (SMTP), e il trasferimento di file (FTP).",
+                "Accesso ai dati da parte delle applicazioni."
+            ],
+            "pdu": "Dati"
+        }
+    ]
+}
